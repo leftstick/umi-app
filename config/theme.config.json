@@ -1,0 +1,21 @@
+{
+  "theme": [
+    {
+      "theme": "dark",
+      "fileName": "dark.css",
+      "@primary-color": "#13C2C2"
+    },
+    {
+      "theme": "light",
+      "fileName": "light.css",
+      "modifyVars": {
+        "@primary-color": "#1b559d"
+      }
+    }
+  ],
+  "min": false,
+  "isModule": true,
+  "ignoreAntd": false,
+  "ignoreProLayout": false,
+  "cache": true
+}

@@ -1,0 +1,49 @@
+{
+  "name": "umi-app",
+  "version": "1.0.0",
+  "description": "Scaffold for umi based project",
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi-test"
+  },
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.js": "eslint --max-warnings=0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^25.2.3",
+    "@types/js-cookie": "^2.2.6",
+    "@umijs/plugin-access": "^2.3.1",
+    "@umijs/plugin-antd": "^0.6.0",
+    "@umijs/plugin-initial-state": "^2.2.1",
+    "@umijs/plugin-locale": "^0.7.0",
+    "@umijs/plugin-model": "^2.3.1",
+    "@umijs/plugin-request": "^2.3.2",
+    "@umijs/test": "^3.2.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
+    "react-coding-style": "^1.1.0",
+    "umi": "^3.2.2",
+    "umi-plugin-antd-theme": "^2.1.2"
+  },
+  "dependencies": {
+    "@umijs/hooks": "^1.9.2",
+    "classnames": "^2.2.6",
+    "js-cookie": "^2.2.1"
+  }
+}
